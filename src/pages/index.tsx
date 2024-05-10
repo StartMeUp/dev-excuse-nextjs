@@ -1,4 +1,4 @@
-import { useGetExcuses } from "@/hooks/tanstack.hooks";
+import { useGetAllExcuses, useCreateOneExcuse } from "@/hooks/tanstack.hooks";
 import { useDialog } from "@/hooks";
 import { generateRandomExcuse, randomExcuseMessage, cn } from "@/utils";
 import { useEffect, useState, useRef } from "react";
@@ -9,10 +9,13 @@ import {
   Box,
   Dialog,
   DualButtons,
+  CreateExcuseForm,
 } from "@/components";
 
 export default function Home() {
-  const { data: excuses, isLoading, isError, error } = useGetExcuses();
+  const { data: excuses, isLoading, isError, error } = useGetAllExcuses();
+
+  const createExcuseMutation = useCreateOneExcuse();
 
   // excuses
   const [randomExcuse, setRandomExcuse] = useState("Aucune excuse à lister");
@@ -100,8 +103,12 @@ export default function Home() {
         />
       )}
 
-      <Dialog ref={dialogRef} closeDialog={closeDialog}>
-        <p>Dialog content</p>
+      <Dialog
+        ref={dialogRef}
+        closeDialog={closeDialog}
+        onClose={createExcuseMutation.reset}
+      >
+        <CreateExcuseForm createExcuseMutation={createExcuseMutation} />
       </Dialog>
     </>
   );

@@ -1,9 +1,9 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
-import type { NextApiRequest, NextApiResponse } from "next";
 import { getAllExcuses } from "@/services/prismaClient";
-import type { Excuses } from "@/types";
+import type { Excuses, NextApiReq, NextApiRes } from "@/types";
 
-const handler = async (req: NextApiRequest, res: NextApiResponse<Excuses>) => {
+const handler = async (req: NextApiReq, res: NextApiRes<Excuses>) => {
+  if (req.method !== "GET") return res.status(405).end();
   const excuses = await getAllExcuses();
   return res.status(200).json(excuses);
 };

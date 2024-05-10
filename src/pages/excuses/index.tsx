@@ -1,10 +1,10 @@
-import { useGetExcuses } from "@/hooks/tanstack.hooks";
+import { useGetAllExcuses } from "@/hooks/tanstack.hooks";
 import { AwaitingData } from "@/components/AwaitingData";
 import { Box, H1 } from "@/components";
 import Link from "next/link";
 
 const Excuses = () => {
-  const { data: excuses, isLoading, isError, error } = useGetExcuses();
+  const { data: excuses, isLoading, isError, error } = useGetAllExcuses();
 
   if (isLoading || isError || error)
     return (
