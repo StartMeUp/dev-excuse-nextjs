@@ -25,6 +25,7 @@
     "seed": "ts-node --compiler-options {\"module\":\"CommonJS\"} prisma/seed.ts"
   },
   "devDependencies": {
+    "@svgr/webpack": "^8.1.0",
     "@tanstack/eslint-plugin-query": "^5.32.1",
     "@types/node": "^20",
     "@types/react": "^18",

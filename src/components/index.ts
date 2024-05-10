@@ -5,3 +5,4 @@ export { GeneratingNewExcuse } from "./SpinnerLoader";
 export { MainLayout } from "./MainLayout";
 export { Button, DualButtons } from "./Button";
 export { Dialog } from "./Dialog";
+export { Separator } from "./Separator";

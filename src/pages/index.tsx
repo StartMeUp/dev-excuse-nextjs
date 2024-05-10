@@ -59,6 +59,7 @@ export default function Home() {
     <>
       <H1
         className={cn(
+          "animate-fadeIn2s",
           areButtonsLoaded &&
             "-translate-y-[calc(50vh-130px)] transform duration-500",
         )}
