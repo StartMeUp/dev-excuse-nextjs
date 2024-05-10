@@ -1,0 +1,85 @@
+export const excusesData = [
+  { http_code: 710, tag: "Novelty Implementations", message: " PHP" },
+  {
+    http_code: 711,
+    tag: "Novelty Implementations",
+    message: " Convenience Store",
+  },
+  { http_code: 712, tag: "Novelty Implementations", message: " NoSQL" },
+  {
+    http_code: 718,
+    tag: "Novelty Implementations",
+    message: " I am not a teapot",
+  },
+  {
+    http_code: 719,
+    tag: "Novelty Implementations",
+    message: " Haskell",
+  },
+  { http_code: 720, tag: "Edge Cases", message: " Unpossible" },
+  { http_code: 721, tag: "Edge Cases", message: " Known Unknowns" },
+  { http_code: 722, tag: "Edge Cases", message: " Unknown Unknowns" },
+  { http_code: 723, tag: "Edge Cases", message: " Tricky" },
+  {
+    http_code: 724,
+    tag: "Edge Cases",
+    message: " This line should be unreachable",
+  },
+  {
+    http_code: 725,
+    tag: "Edge Cases",
+    message: " It works on my machine",
+  },
+  {
+    http_code: 726,
+    tag: "Edge Cases",
+    message: " It's a feature, not a bug",
+  },
+  { http_code: 727, tag: "Edge Cases", message: " 32 bits is plenty" },
+  {
+    http_code: 728,
+    tag: "Edge Cases",
+    message: " It works in my timezone",
+  },
+  { http_code: 730, tag: "Fucking", message: " Fucking npm" },
+  { http_code: 731, tag: "Fucking", message: " Fucking Rubygems" },
+  { http_code: 732, tag: "Fucking", message: " Fucking Unic de" },
+  { http_code: 733, tag: "Fucking", message: " Fucking Deadlocks" },
+  { http_code: 734, tag: "Fucking", message: " Fucking Deferreds" },
+  {
+    http_code: 736,
+    tag: "Fucking",
+    message: " Fucking Race Conditions",
+  },
+  { http_code: 735, tag: "Fucking", message: " Fucking IE" },
+  { http_code: 737, tag: "Fucking", message: " FuckThreadsing" },
+
+  { http_code: 739, tag: "Fucking", message: " Fucking Windows" },
+  { http_code: 738, tag: "Fucking", message: " Fucking Exactly" },
+  {
+    http_code: 750,
+    tag: "Syntax Errors",
+    message: " Didn't bother to compile it",
+  },
+  { http_code: 753, tag: "Syntax Errors", message: " Syntax Error" },
+  {
+    http_code: 754,
+    tag: "Syntax Errors",
+    message: " Too many semi-colons",
+  },
+  {
+    http_code: 755,
+    tag: "Syntax Errors",
+    message: " Not enough semi-colons",
+  },
+  {
+    http_code: 756,
+    tag: "Syntax Errors",
+    message: " Insufficiently polite",
+  },
+  {
+    http_code: 757,
+    tag: "Syntax Errors",
+    message: " Excessively polite",
+  },
+];
