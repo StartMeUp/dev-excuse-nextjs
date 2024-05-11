@@ -21,5 +21,4 @@ export interface NextApiReq extends NextApiRequest {
 export interface NextApiReqWithBody<BodyType> extends NextApiReq {
   body: BodyType;
 }
-
-export type NextApiRes<Data> = NextApiResponse<Data>;
+export type NextApiRes<ResData> = NextApiResponse<ResData>;

@@ -2,7 +2,7 @@ import {
   fetchAllExcuses,
   fetchOneExcuse,
   fetchCreateOneExcuse,
-} from "@/services/api";
+} from "@/services/fetch";
 import { useQuery, useMutation, QueryClient } from "@tanstack/react-query";
 import { Excuse, ExcusePayload } from "@/types";
 

@@ -41,7 +41,7 @@ export default function Home() {
   useEffect(() => {
     // set first random excuse when excuses data has been received
     if (excusesIsNotEmpty) setRandomExcuse(randomExcuseMessage(excuses));
-  }, [excusesIsNotEmpty, excuses]);
+  }, [excusesIsNotEmpty]);
 
   useEffect(() => {
     // on first page load, load buttons after 2 seconds
