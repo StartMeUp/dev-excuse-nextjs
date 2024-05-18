@@ -6,6 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+    "start:app": "npm run build && npm run start",
     "lint": "next lint",
     "push-db": "prisma db push",
     "prisma-studio": "npx prisma studio",

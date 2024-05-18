@@ -42,7 +42,9 @@ export const CreateExcuseForm = ({
 
   if (isSuccess) {
     return (
-      <p className="cursor-pointer rounded-lg bg-green-500 p-4 text-center text-2xl font-bold text-white"></p>
+      <p className="cursor-pointer rounded-lg bg-green-500 p-4 text-center text-2xl font-bold text-white">
+        Excuse créée avec succès
+      </p>
     );
   }
 
